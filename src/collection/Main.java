@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,7 +45,7 @@ public class Main {
         } */
 
         //Name Course ActionType -> Enroll Watch
-        String logs[][] = {
+        /* String logs[][] = {
                 {"Nikhil", "Java", "Enroll"},
                 {"Nithin", "SpringBoot", "Watch"},
                 {"Nishanth", "React", "Enroll"},
@@ -57,13 +58,13 @@ public class Main {
                 {"Thamas", "DevOps", "Enroll"},
                 {"Nithin", "SpringBoot", "Watch"},
                 {"Nikhil", "Java", "Enroll"},
-        };
+        }; */
         //Using a map -> study these logs
         //1. How many users -> have taken -> course Java
         //2. find the most Active Users.
         //3, find the time span of these
 
-        int javaEnrollCount = 0;
+        /* int javaEnrollCount = 0;
 
         for(String[] log : logs) {
             if (log[1].equals("Java") && log[2].equals("Enroll")) {
@@ -92,7 +93,16 @@ public class Main {
         System.out.println("Most Active user = " + mostActiveUser);
         System.out.println("Activity Count = " + maxActivity);
 
-        System.out.println(("Time Span(total logs) = " + logs.length));
+        System.out.println(("Time Span(total logs) = " + logs.length)); */
+
+        HashSet<Integer> setofrollnumber = new HashSet<>();
+
+        setofrollnumber.add(1);
+        setofrollnumber.add(1);
+        setofrollnumber.add(1);
+        setofrollnumber.add(1);
+
+        System.out.println(setofrollnumber.size());
 
     }
 }
